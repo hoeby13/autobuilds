@@ -50,7 +50,7 @@ jobs:
           tags: ${{ steps.docker_meta.outputs.tags }}
           labels: ${{ steps.docker_meta.outputs.labels }}
 
-test-container:
+  test-container:
    name: Test our container
    needs: build-and-push-image
    runs-on: ubuntu-latest
